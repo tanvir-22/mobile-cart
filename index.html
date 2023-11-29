@@ -26,11 +26,11 @@
 
                      <div class="col-md-5 center-item">
                         <div class="input-group number-spinner">
-                           <button class="btnm btn-default" id="minus"><i class="fas fa-minus"></i></button>
-                           <input type="text" class="form-control text-center" value="1" id="count">
-                           <button class="btnp btn-default" id="plus"><i class="fas fa-plus"></i></button>
+                           <button onclick="handlebtn('phone',false)" class="btnm btn-default"><i class="fas fa-minus"></i></button>
+                           <input id="phone-count"  type="text" class="form-control text-center" value="1">
+                           <button onclick="handlebtn('phone',true)" class="btnp btn-default"><i class="fas fa-plus"></i></button>
                         </div>
-                        <h5>$ <span id ="pricetxt">1219</span></h5>
+                        <h5 id="phone-total">$1219</h5>
                         <img src="images/remove.png" alt="" class="remove-item">
                      </div>
                   </div>
@@ -44,12 +44,12 @@
                      </div>
                      <div class="col-md-5 center-item">
                         <div class="input-group number-spinner">
-                           <button class="btnm btn-default" id="minus2"><i class="fas fa-minus"></i></button>
-                           <input type="text" class="form-control text-center" value="1" id="count2">
-                           <button class="btnp btn-default " id="plus2"><i class="fas fa-plus"></i></button>
+                           <button onclick="handlebtn('case',false)" class="btnm btn-default"><i class="fas fa-minus"></i></button>
+                           <input id="case-count" type="text" class="form-control text-center" value="1">
+                           <button  onclick="handlebtn('case',true)" class="btnp btn-default "><i class="fas fa-plus"></i></button>
 
                         </div>
-                        <h5>$ <span id="casepricetxt">59</span> </h5>
+                        <h5 id="case-total">$59</h5>
                         <img src="images/remove.png" alt="" class="remove-item">
                      </div>
                   </div>
@@ -65,19 +65,19 @@
                      </div>
 
                      <div class="col-md-4 status">
-                        <h5>$ <span id="subtotal">1,278</span></h5>
-                        <h5>$ <span id="tax">00</span> </h5>
-                        <h5>$ <span id="total">1278</span> </h5>
+                        <h5 id="Subtotal">$1,278</h5>
+                        <h5 id="tax">$00</h5>
+                        <h5 id="grandtotal">$1278</h5>
                      </div>
                   </div>
                </div>
                <div class="col-md-12 pt-4 pb-4">
-                  <button type="button" class="btn btn-success check-out" id="chekoutbtn">Check Out</button>
+                  <button type="button" class="btn btn-success check-out">Check Out</button>
                </div>
             </div>
          </div>
       </div>
-      <script src="index.js">
+      <script src="optimised.js">
 
 
       </script>
